@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_contact">
+
+    <ImageView
+        android:id="@+id/imgperson"
+        android:layout_width="269dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sharp_person_24" />
+
+    <ImageView
+        android:id="@+id/imgcall"
+        android:layout_width="64dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="71dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgmessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgperson"
+        app:srcCompat="@drawable/ic_baseline_call_24" />
+
+    <ImageView
+        android:id="@+id/imgmessage"
+        android:layout_width="46dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgcall"
+        app:layout_constraintTop_toBottomOf="@+id/imgperson"
+        app:srcCompat="@drawable/ic_baseline_message_24" />
+
+    <TextView
+        android:id="@+id/tvmoreoptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="260dp"
+        android:text="More Operations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcall" />
+
+    <ImageView
+        android:id="@+id/imgblock"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgfav"
+        app:layout_constraintTop_toTopOf="@+id/imgfav"
+        app:srcCompat="@drawable/ic_baseline_block_24" />
+
+    <TextView
+        android:id="@+id/tvblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:text="Block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvfavourites"
+        app:layout_constraintTop_toBottomOf="@+id/imgblock" />
+
+    <ImageView
+        android:id="@+id/imgfav"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="45dp"
+        app:layout_constraintStart_toEndOf="@+id/imgvideo"
+        app:layout_constraintTop_toTopOf="@+id/imgvideo"
+        app:srcCompat="@drawable/ic_baseline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/imgvideo"
+        android:layout_width="46dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgvoice"
+        app:srcCompat="@drawable/ic_baseline_voice_chat_24" />
+
+    <ImageView
+        android:id="@+id/imgvoice"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmoreoptions"
+        app:srcCompat="@drawable/ic_baseline_video_call_24" />
+
+    <TextView
+        android:id="@+id/tvvoicecall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text=" Voice Chat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvoice" />
+
+    <TextView
+        android:id="@+id/tvvideocall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:text="Video Chat"
+        app:layout_constraintEnd_toStartOf="@+id/tvfavourites"
+        app:layout_constraintStart_toEndOf="@+id/tvvoicecall"
+        app:layout_constraintTop_toBottomOf="@+id/imgvideo" />
+
+    <TextView
+        android:id="@+id/tvfavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:text="Favourites"
+        app:layout_constraintEnd_toStartOf="@+id/tvblock"
+        app:layout_constraintStart_toEndOf="@+id/tvvideocall"
+        app:layout_constraintTop_toBottomOf="@+id/imgfav" />
+
+    <TextView
+        android:id="@+id/tvcall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="13dp"
+        android:text="Call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcall" />
+
+    <TextView
+        android:id="@+id/tvmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="14dp"
+        android:text="Message"
+        app:layout_constraintStart_toEndOf="@+id/tvcall"
+        app:layout_constraintTop_toBottomOf="@+id/imgmessage" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="#fff"
+        android:text="EDIT"
+        android:textColor="#000"
+        app:layout_constraintEnd_toStartOf="@+id/btnSend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvvideocall" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#fff"
+        android:text="SEND"
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/tvfavourites" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="46dp"
+        android:backgroundTint="@color/white"
+        android:text="DELETE"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSend"
+        app:layout_constraintTop_toBottomOf="@+id/tvfavourites" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
